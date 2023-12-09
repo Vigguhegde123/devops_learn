@@ -1,12 +1,12 @@
 pipeline {
     agent any 
     stages {
-        steps('code analaysis') {
+        stage('code analaysis') {
             steps{
             sh 'echo "sonar running"'
             }
         }
-        stages('code tetsing'){
+        stage('code tetsing'){
             steps{
             sh 'echo "testing"'
             }
